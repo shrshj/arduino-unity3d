@@ -61,7 +61,7 @@ void loop() {
 ## Step 4
 Testing our blink code using Unity
 - Note: becasue of heavy unity files Only the script file is uploaded here.
-- Below pictures show the location of street lamp (downloaded from assest store) and point light (added from GameObject)
+- Below pictures show the location of street lamp (downloaded from the assest store) and point light (added from GameObject)
 
 
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Serial%20Communication/-media/step4-1.png" width="900"/>
@@ -93,7 +93,7 @@ void loop() {
 
 
 ```
-// C#
+// C# script connected to point light
 
 using System.Collections;
 using System.Collections.Generic;
@@ -142,3 +142,7 @@ public class flashing : MonoBehaviour
 }
 
 ```
+
+- Result
+
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Serial%20Communication/-media/step4-3.png" width="900"/>
