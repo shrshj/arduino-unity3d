@@ -146,4 +146,4 @@ public class flashing : MonoBehaviour
 
 - Result
 
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Serial%20Communication/-media/step4-3.gif" width="400"/>
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Serial%20Communication/-media/step4-3.gif" width="700"/>
