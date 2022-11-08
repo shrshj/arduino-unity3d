@@ -28,3 +28,14 @@ void loop() {
 
 
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Serial%20Communication/-media/step2-blink-vid.gif" width="300"/>
+
+## Step 3
+Testing a blink code using a real LED (in a circuit)
+
+- Circuit
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Serial%20Communication/-media/step3-blink-using-real-led-img.jpg" width="300"/>
+
+
+- Result
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Serial%20Communication/-media/step3-blink-using-real-led-vid.gif" width="300"/>
+
