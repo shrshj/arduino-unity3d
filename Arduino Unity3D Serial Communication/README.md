@@ -61,7 +61,7 @@ void loop() {
 ## Step 4
 Testing our blink code using Unity
 - Note: becasue of heavy unity files Only the script file is uploaded here.
-- The tutorial provided <a href="https://www.youtube.com/watch?v=__DG62kEULg">HERE</a> is used. But remember that script has the same name as the class, and append the defined point light to the Light variabe of this script.
+- The tutorial provided <a href="https://www.youtube.com/watch?v=__DG62kEULg">HERE</a> is used. But make sure that the script has the same name as the class inside it, and append the defined point light to the Light variabe of this script.
 - Below pictures show the location of street lamp (downloaded from the assest store) and point light (added from GameObject)
 
 
