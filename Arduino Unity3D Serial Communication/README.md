@@ -27,4 +27,4 @@ void loop() {
 ```
 
 
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/-media/step2-blink-vid.gif " width="300"/>
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Serial%20Communication/-media/step2-blink-vid.gif" width="300"/>
