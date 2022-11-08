@@ -30,12 +30,13 @@ void loop() {
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Serial%20Communication/-media/step2-blink-vid.gif" width="300"/>
 
 ## Step 3
-Testing a blink code using a real LED (in a circuit)
+Testing a blink code using a real LED (in a circuit)<br />
 
-- Circuit
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Serial%20Communication/-media/step3-blink-using-real-led-img.jpg" width="300"/>
+Circuit <br />
+Note: We can use Pin #2 to Pin #13 as the output pin
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Serial%20Communication/-media/step3-blink-using-real-led-img.jpg" width="300"/><br />
 
 
-- Result
+Result
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Serial%20Communication/-media/step3-blink-using-real-led-vid.gif" width="300"/>
 
