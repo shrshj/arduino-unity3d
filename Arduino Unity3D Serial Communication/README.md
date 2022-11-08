@@ -1,5 +1,5 @@
 ## Step 1
-Preparing requirements for Arduino
+Preparing requirements for Arduino code
 - Arduino IDE (version 2.0.1 for windows 10)
 - Arduino Uno R3 Board
 - USB cable to connect Arduino to the PC
@@ -26,6 +26,4 @@ void loop() {
 }
 ```
 
-
-
-
+[<img src="https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=Hc79sDi3f0U "Blink")
