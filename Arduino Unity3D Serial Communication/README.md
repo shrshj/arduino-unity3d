@@ -61,6 +61,7 @@ void loop() {
 ## Step 4
 Testing our blink code using Unity
 - Note: becasue of heavy unity files Only the script file is uploaded here.
+- The tutorial provided <a href="">HERE</a> is used. But remember that script has the same name as the class, and append the defined point light to the Light variabe of this script.
 - Below pictures show the location of street lamp (downloaded from the assest store) and point light (added from GameObject)
 
 
@@ -145,4 +146,4 @@ public class flashing : MonoBehaviour
 
 - Result
 
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Serial%20Communication/-media/step4-3.gif" width="900"/>
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Serial%20Communication/-media/step4-3.gif" width="400"/>
