@@ -1,6 +1,6 @@
 ## Step 1
--Boards: Arduino UNO R3, ESP-WROOM-32
--Conncet TX and RX of boards in a cross way. Also conncet GND pins of them.
+- Boards: Arduino UNO R3, ESP-WROOM-32
+- Conncet TX and RX of boards in a cross way. Also conncet GND pins of them.
 Here, in ESP we defined Pin #16 as RX and Pin #17 as TX. In Arduino we used TX and RX defined on the board (Pin #1 and Pin #0).
 - We need to provide two .ino files one for ESP and one for Arduino.
 - Make sure that "serial baud rate" of both codes are same (here 9600). Using different baud rate can cause into reciving weired charachters in the Serial Monitor of Arduino IDE.
