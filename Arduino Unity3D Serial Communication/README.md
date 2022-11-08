@@ -32,8 +32,8 @@ void loop() {
 ## Step 3
 Testing a blink code using a real LED (in a circuit)
 
-- Circuit 
-- Note: We can use Pin #2 to Pin #13 as the output pin
+_ Circuit 
+_ Note: We can use Pin #2 to Pin #13 as the output pin
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Serial%20Communication/-media/step3-blink-using-real-led-img.jpg" width="300"/>
 
 
