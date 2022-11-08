@@ -6,8 +6,8 @@ Preparing requirements for Arduino
 
 ## Step 2
 Testing a simple blinking code on Arduino
-To do so we can use built-in led of Arduino which is connected to pin #13 in Uno R3. 
-Note: select the correct port and board model from tools menu.
+- To do so we can use built-in led of Arduino which is connected to pin #13 in Uno R3. 
+- Note: select the correct port and board model from tools menu.
 
 
 ```
