@@ -26,4 +26,6 @@ void loop() {
 }
 ```
 
-[<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/-img-/step2-blink-vid-thumb.jpg" width="50%">](https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/-vid-/step2-blink-vid.mp4 "Blink")
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
+
