@@ -45,5 +45,5 @@ void loop() {
 
 ## Result
 
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20wifi/-media/result.png" width="500"/>
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20wifi/-media/res.JPG" width="500"/>
 
