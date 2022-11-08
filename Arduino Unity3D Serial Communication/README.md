@@ -25,6 +25,6 @@ void loop() {
   delay(1000);                      // wait for a second
 }
 ```
-![Alt Text](https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/-media/step2-blink-vid.gif =250x250)
+'''![Alt Text](https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/-media/step2-blink-vid.gif =250x250)'''
 
-
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/-media/step2-blink-vid.gif " width="250" height="250"/>
