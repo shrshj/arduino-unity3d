@@ -32,10 +32,27 @@ void loop() {
 ## Step 3
 Testing a blink code using a real LED (in a circuit)
 
-_ Circuit 
-_ Note: We can use Pin #2 to Pin #13 as the output pin
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Serial%20Communication/-media/step3-blink-using-real-led-img.jpg" width="300"/>
 
+```
+// Arduino code
+int ledPin = 12; // We can use Pin #2 to Pin #13 as the output pin
+
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(ledPin, OUTPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(ledPin, HIGH);  // turn the LED on (HIGH is the voltage level)
+  delay(1000);                      // wait for a second
+  digitalWrite(ledPin, LOW);   // turn the LED off by making the voltage LOW
+  delay(1000);                      // wait for a second
+}
+```
+
+- Circuit 
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Serial%20Communication/-media/step3-blink-using-real-led-img.jpg" width="300"/>
 
 - Result
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Serial%20Communication/-media/step3-blink-using-real-led-vid.gif" width="300"/>
