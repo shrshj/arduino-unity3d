@@ -98,7 +98,7 @@ void loop()
 ```
 
 
-Results...
+## Results...
 
 - When the button is off, in the mobile app:
 <p>
@@ -112,3 +112,11 @@ Results...
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/ON.jpg" width="300"/>
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/ON-LED.jpg" width="300"/><br />
 </p>
+
+## Important Links
+
+-<a href="https://docs.blynk.io/en/blynk.edgent-firmware-api/virtual-pins"> Controling Virtual Pins</a>
+-<a href="https://www.instructables.com/Use-ESP32-to-Control-LED-With-Blynk-Via-WiFi/"> Useful Video Tutorial 1</a>
+-<a href="https://www.patreon.com/posts/25890704"> Useful Video Tutorial 2</a>
+-<a href="https://www.youtube.com/watch?v=rlqOXZqDsts"> Useful Video Tutorial 3</a>
+
