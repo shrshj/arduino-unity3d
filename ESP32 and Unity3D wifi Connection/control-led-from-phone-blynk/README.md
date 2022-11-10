@@ -3,7 +3,7 @@ The Circuit we used is like what we had <a href="https://github.com/shshjmakersp
 
 ## Requirements
 - Installing Blynk on IOS or Android phone and creating a device in it
-- Installing Blynk library in Arduino IDE
+- Installing Blynk library in Arduino IDE (<a href ="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/Blynk-install.png">Help</a>)
 - Wifi connection between our phone and ESP32
 
 
@@ -36,3 +36,4 @@ The Circuit we used is like what we had <a href="https://github.com/shshjmakersp
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/24.jpg" width="300"/><br />
 
 
+## How to create a device on Blynk app?
