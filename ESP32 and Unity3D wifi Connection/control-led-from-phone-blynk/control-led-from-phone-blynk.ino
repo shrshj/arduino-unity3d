@@ -7,7 +7,6 @@
 
 // Comment this out to disable prints and save space
 #define BLYNK_PRINT Serial
-
 #include <WiFi.h>
 #include <WiFiClient.h>
 #include <BlynkSimpleEsp32.h>
@@ -27,9 +26,7 @@ void setup()
   Serial.begin(9600);
   Blynk.begin(auth, ssid, pass);
   pinMode(pin, OUTPUT);
-
 }
-
 
 BLYNK_WRITE(V1)
 {   
@@ -40,11 +37,9 @@ BLYNK_WRITE(V1)
   else{
     digitalWrite(pin, LOW);
   }
-
 }
 
 void loop()
 {
   Blynk.run();
-
 }
