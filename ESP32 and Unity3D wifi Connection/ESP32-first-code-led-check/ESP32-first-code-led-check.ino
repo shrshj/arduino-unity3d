@@ -1,6 +1,6 @@
 
 // the setup function runs once when you press reset or power the board
-int ledPin = 17;
+int ledPin = 21;
 
 void setup() {
   // initialize digital pin GIOP18 as an output.
