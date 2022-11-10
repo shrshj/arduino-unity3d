@@ -115,8 +115,8 @@ void loop()
 
 ## Important Links
 
--<a href="https://docs.blynk.io/en/blynk.edgent-firmware-api/virtual-pins"> Controling Virtual Pins</a>
--<a href="https://www.instructables.com/Use-ESP32-to-Control-LED-With-Blynk-Via-WiFi/"> Useful Video Tutorial 1</a>
--<a href="https://www.patreon.com/posts/25890704"> Useful Video Tutorial 2</a>
--<a href="https://www.youtube.com/watch?v=rlqOXZqDsts"> Useful Video Tutorial 3</a>
+- <a href="https://docs.blynk.io/en/blynk.edgent-firmware-api/virtual-pins"> Controling Virtual Pins</a>
+- <a href="https://www.instructables.com/Use-ESP32-to-Control-LED-With-Blynk-Via-WiFi/"> Useful Video Tutorial 1</a>
+- <a href="https://www.patreon.com/posts/25890704"> Useful Video Tutorial 2</a>
+- <a href="https://www.youtube.com/watch?v=rlqOXZqDsts"> Useful Video Tutorial 3</a>
 
