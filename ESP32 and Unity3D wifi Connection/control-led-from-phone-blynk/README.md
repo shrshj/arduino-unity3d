@@ -11,7 +11,7 @@ The Circuit we used is like what we had <a href="https://github.com/shshjmakersp
 
 
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/1.jpg" width="300"/>
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/tree/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/2.jpg" width="300"/>
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/2.jpg" width="300"/>
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/tree/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/3.jpg" width="300"/>
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/tree/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/4.jpg" width="300"/>
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/tree/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/5.jpg" width="300"/>
