@@ -40,7 +40,7 @@ The Circuit we used is like what we had <a href="https://github.com/shshjmakersp
 
 Log-in to your blynk dashboard in PC and after selecting the right device go to device info tab and copy-paste it into the code.
 
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/device-info.png" width="300"/><br />
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/device-info.png" width="900"/><br />
 
 
 ## Codes 
@@ -101,11 +101,12 @@ void loop()
 Results...
 
 - When the button is off, in the mobile app:
-
+<p>
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/OFF.jpg" width="300"/>
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/OFF-LED.jpg" width="300"/><br />
-
+</p>
 - When the button is on, in the mobile app:
-
+<p>
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/ON.jpg" width="300"/>
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/ON-LED.jpg" width="300"/><br />
+</p>
