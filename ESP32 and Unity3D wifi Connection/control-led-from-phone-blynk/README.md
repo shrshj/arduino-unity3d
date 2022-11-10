@@ -36,4 +36,76 @@ The Circuit we used is like what we had <a href="https://github.com/shshjmakersp
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/24.jpg" width="300"/><br />
 
 
-## How to create a device on Blynk app?
+## How to access the App in the code?
+
+Log-in to your blynk dashboard in PC and after selecting the right device go to device info tab and copy-paste it into the code.
+
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/device-info.png" width="300"/><br />
+
+
+## Codes 
+
+In the code below, after necessary device information we need to import requred libraries and also username and password of local wifi. The main part of this code is "BLYNK_WRITE" which helps us to access Virtual pin (button) we defined in the Blynk app. Based on the value of this virtual pin we can decide what can happen to a pin in ESP32.
+
+
+```
+
+// Template ID, Device Name and Auth Token are provided by the Blynk.Cloud
+// See the Device Info tab, or Template settings
+#define BLYNK_TEMPLATE_ID "TMPLxexYg_oz"
+#define BLYNK_DEVICE_NAME "LED"
+#define BLYNK_AUTH_TOKEN "q0wAXhdIfF0VrpyhI2huPJRFwKcksGgC"
+
+// Comment this out to disable prints and save space
+#define BLYNK_PRINT Serial
+#include <WiFi.h>
+#include <WiFiClient.h>
+#include <BlynkSimpleEsp32.h>
+
+char auth[] = BLYNK_AUTH_TOKEN;
+
+// Your WiFi credentials.
+// Set password to "" for open networks.
+char ssid[] = "PDIWindow";
+char pass[] = "cdtcdtcdt";
+
+// Select your pin with physical button
+int pin = 21;
+int value = 0;
+void setup()
+{
+  Serial.begin(9600);
+  Blynk.begin(auth, ssid, pass);
+  pinMode(pin, OUTPUT);
+}
+
+BLYNK_WRITE(V1)
+{   
+  value = param.asInt(); // Get value as integer
+  if(value){
+    digitalWrite(pin, HIGH);
+  }
+  else{
+    digitalWrite(pin, LOW);
+  }
+}
+
+void loop()
+{
+  Blynk.run();
+}
+
+```
+
+
+Results...
+
+- When the button is off, in the mobile app:
+
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/OFF.jpg" width="300"/>
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/OFF-LED.jpg" width="300"/><br />
+
+- When the button is on, in the mobile app:
+
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/ON.jpg" width="300"/>
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/ESP32%20and%20Unity3D%20wifi%20Connection/-media/ON-LED.jpg" width="300"/><br />
