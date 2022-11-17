@@ -58,7 +58,7 @@ Connections...
 <br />
 Demo...
 <br />
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/bluetooth-hc05-demo.mp4" width="700"/>
+<video src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/bluetooth-hc05-demo.mp4" controls="controls" style="max-width: 730px;"></video>
 
 
 
