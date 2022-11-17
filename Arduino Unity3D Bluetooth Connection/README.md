@@ -8,7 +8,7 @@ In these section we tried to send data to a Arduino from a mobile app over bluet
 Notes...
 - Link to the tutorial we used --- > <a href="https://www.youtube.com/watch?v=aQcJ4uHdQEA"> HERE</a> <br />
 - To upload the complied code correctly to the Arduino, HC-05 must be disconnected from Arduino.
-- Download the app from <a href="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-apk/Bluetooth.apk">here</a>.
+- Download the app from <a href="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-apk/Bluetooth.apk">HERE</a>.
 
 <br />
 
