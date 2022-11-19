@@ -62,3 +62,6 @@ Demo...
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/bluetooth-hc05-demo.gif" width="700"/>
 
 
+## Step 2
+# Transfering data from Arduino to Unity over Bluetooth (HC05)
+To be documented

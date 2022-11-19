@@ -14,11 +14,9 @@ void loop()
     Serial.print(Incoming_value);        
     Serial.print("\n");        
     if(Incoming_value == '1'){
-      Serial.println("1");             
       digitalWrite(13, HIGH);
     } 
     if(Incoming_value == '0'){
-      Serial.println("0");       
       digitalWrite(13, LOW);
     }  
   }                            
