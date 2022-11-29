@@ -63,5 +63,139 @@ Demo...
 
 
 ## Step 2
-# Transfering data from Arduino to Unity over Bluetooth (HC05)
-To be documented
+### Transfering data from Arduino to Unity over Bluetooth (HC05)
+
+In this section we tried to transfer data from Arduino to unity. in arduino loop() we send "1" or "2" with one second intervals and in unity we change the ball color based on the vallue we receive.<br/>
+
+Note: First, pair HC-05 and you PC Bluetooth. Then in your PC Bluetooth setting find out the COM port that HC-05 is connected to. (the Outgoing port)<br/>
+
+Note: Make sure that in Player setting API Compatibility level is ".net" version 4 (It may be mentiond as .NET Framework) and not the standard version.<br/>
+
+
+C# script...
+
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System.IO.Ports;
+using System;
+
+public class SerialCOM : MonoBehaviour
+{
+    // parameters
+    private string port = "COM4";
+    private int baudrate = 9600;
+
+    private SerialPort sp;
+    bool isStreaming = false;
+    public GameObject sphere;
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        Open();
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (isStreaming)
+        {
+            string value = ReadSerialPort();
+
+            if (value != null)
+            {   
+                Debug.Log(value);
+
+
+                if (value.Equals("1"))
+                {
+                    // change ball color to blue
+                    print("blue");
+                    sphere.GetComponent<Renderer>().material.color = Color.blue;
+
+                }
+                else if (value.Equals("2"))
+                {
+                    // change ball color to red
+                    print("red");
+                    sphere.GetComponent<Renderer>().material.color = Color.red;
+
+                }
+                else
+                {
+                    print(value + " Not Numeric!!!");
+                }
+            }
+            else
+            {
+                print("Null Value!!!!!!");
+            }
+
+
+
+
+
+        }
+    }
+
+
+    public void Open()
+    {
+        isStreaming = true;
+        sp = new SerialPort(port, baudrate);
+        sp.ReadTimeout = 100;
+        sp.Open();
+        Debug.Log("Port was opened successfully");
+
+    }
+
+    public string ReadSerialPort(int timeout = 50)
+    {
+        string message;
+        sp.ReadTimeout = timeout;
+        try
+        {
+            message = sp.ReadLine();
+            Debug.Log(message);
+            return message;
+        }
+        catch (TimeoutException)
+        {
+            return null;
+        }
+    }
+
+    public void Close()
+    {
+        sp.Close();
+    }
+}
+
+
+```
+
+<br/>
+Arduino Code...
+
+```
+#include <SoftwareSerial.h>;
+SoftwareSerial myConn(10,11); //rx,tx
+
+void setup(){
+
+  myConn.begin(9600);
+}
+
+void loop(){
+
+  myConn.println({"1"});
+  delay(1000);
+  myConn.println({"2"});
+  delay(1000);
+
+} 
+```
