@@ -67,7 +67,8 @@ Demo...
 
 In this section we tried to transfer data from Arduino to unity. in arduino loop() we send "1" or "2" with one second intervals and in unity we change the ball color based on the vallue we receive.<br/>
 
-Notes: 
+<br/><br/>
+Notes...
 - First, pair HC-05 and you PC Bluetooth. Then in your PC Bluetooth setting find out the COM port that HC-05 is connected to. (the Outgoing port)
 - Make sure that in Player setting API Compatibility level is ".net" version 4 (It may be mentiond as .NET Framework) and not the standard version.
 - To Upload the compiled code to Arduino, first disconnect the HC-05 and after Uploading reconnect it.
@@ -218,8 +219,8 @@ Demo...
 In this step we tried to control an LED from Unity MRTK project. We have two ON/OFF buttons from Mixed Reality Toolbox (make sure to install mixed reality toolbox when adding mrtk to your project). First we need to pair HC-05 with the PC Bluetooth (Check step 2 for more details). 
 <br /><br />
 In "led.cs" we only used COM4 port which we knew HC05 is connected to. But in hololens we coud not find out the port name. So instead using "led_all_ports.cs" we checked all the ports and tried to send data to all of them, however it was unsuccessful. 
-<br /><br /><br />
-Notes: 
+<br /><br />
+Notes...
 - In Unity create a controller (and drag led.cs into it). Then after creting MRTK button (from mrtk toolkit) in 
 - <a href="https://www.youtube.com/watch?v=EIpxXodmO6A">This</a> video can help in creating MRTK Buttons.
 
