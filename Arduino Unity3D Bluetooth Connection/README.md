@@ -59,7 +59,7 @@ Connections...
 <br />
 Demo...
 <br />
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step2-connections.jpg" width="700"/>
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step1-bluetooth-hc05-demo.gif" width="700"/>
 
 
 ## Step 2
@@ -75,7 +75,7 @@ Note: To Upload the compiled code to Arduino, first disconnect the HC-05 and aft
 
 <br/>
 Connections...
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step1-bluetooth-hc05-demo.gif" width="700"/>
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step2-connections.jpg" width="700"/>
 
 
 <br/>
