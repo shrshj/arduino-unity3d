@@ -11,7 +11,7 @@ Notes...
 - To upload the complied code correctly to the Arduino, HC-05 must be disconnected from Arduino.
 - Download the app from <a href="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/step1_HC05-connection-to-phone-bluetooth/Bluetooth.apk">HERE</a>.
 
-<br />
+<br /><br />
 Codes...
 
 ```
@@ -70,7 +70,7 @@ Notes...
 - Make sure that in Player setting API Compatibility level is ".net" version 4 (It may be mentiond as .NET Framework) and not the standard version.
 - To Upload the compiled code to Arduino, first disconnect the HC-05 and after Uploading reconnect it.
 
-<br />
+<br /><br />
 Connections...
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step2-connections.jpg" width="700"/>
 
@@ -218,7 +218,7 @@ In "led.cs" we only used COM4 port which we knew HC05 is connected to. But in ho
 <br />
 
 Notes...
-- In Unity create a controller (and drag led.cs into it). Then after creting MRTK button (from mrtk toolkit) in 
+- In Unity create a controller (and drag led.cs into it). Then after creting MRTK button (from Mixed Reality -> toolkit -> toolbox) in from " Inspector window - > Interactable script -> Events section -> Onclick() " select the controller and then select the right method (for example on_led() ).
 - <a href="https://www.youtube.com/watch?v=EIpxXodmO6A">This</a> video can help in creating MRTK Buttons.
 
 
