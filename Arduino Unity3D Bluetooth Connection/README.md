@@ -56,7 +56,7 @@ Connections...
 
 <br />
 Demo...
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step1-bluetooth-hc05-demo.gif" width="700"/>
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step1-demo.gif" width="700"/>
 
 
 ## Step 2
@@ -219,6 +219,7 @@ In "led.cs" we only used COM4 port which we knew HC05 is connected to. But in ho
 
 Notes...
 - In Unity create a controller (and drag led.cs into it). Then after creting MRTK button (from Mixed Reality -> toolkit -> toolbox) in from " Inspector window - > Interactable script -> Events section -> Onclick() " select the controller and then select the right method (for example on_led() ).
+
 - <a href="https://www.youtube.com/watch?v=EIpxXodmO6A">This</a> video can help in creating MRTK Buttons.
 
 
