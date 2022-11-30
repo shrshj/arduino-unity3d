@@ -3,15 +3,15 @@
 
 
 ## Step 1
-In these section we tried to send data to a Arduino from a mobile app over bluetooth, to check if the bluetooth module works properly. We used HC-05 bluetooth module and Arduino UNO. Also, using <a href="http://ai2.appinventor.mit.edu/">MIT APP Inventor</a> we created a simple LED ON/OFF app to control an LED using it.<br />
+In these section we tried to send data to a Arduino from a mobile app over bluetooth, to check if the bluetooth module works properly. We used HC-05 bluetooth module and Arduino UNO. Also, using <a href="http://ai2.appinventor.mit.edu/">MIT APP Inventor</a> we created a simple LED ON/OFF app to control an LED using it.
 
+<br /><br />
 Notes...
-- Link to the tutorial we used --- > <a href="https://www.youtube.com/watch?v=aQcJ4uHdQEA"> HERE</a> <br />
+- Link to the tutorial we used --- > <a href="https://www.youtube.com/watch?v=aQcJ4uHdQEA"> HERE</a>
 - To upload the complied code correctly to the Arduino, HC-05 must be disconnected from Arduino.
 - Download the app from <a href="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/step1_HC05-connection-to-phone-bluetooth/Bluetooth.apk">HERE</a>.
 
 <br />
-
 Codes...
 
 ```
@@ -45,12 +45,10 @@ void loop()
 
 <br />
 App design...
-<br />
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step1-app.JPG" width="700"/>
 
 <br />
 Connections...
-<br />
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step1-details.jpg" width="700"/>
 
 
@@ -58,14 +56,13 @@ Connections...
 
 <br />
 Demo...
-<br />
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step1-bluetooth-hc05-demo.gif" width="700"/>
 
 
 ## Step 2
 ### Transfering data from Arduino to Unity over Bluetooth (HC05)
 
-In this section we tried to transfer data from Arduino to unity. in arduino loop() we send "1" or "2" with one second intervals and in unity we change the ball color based on the vallue we receive.<br/>
+In this section we tried to transfer data from Arduino to unity. in arduino loop() we send "1" or "2" with one second intervals and in unity we change the ball color based on the vallue we receive.
 
 <br/><br/>
 Notes...
@@ -79,7 +76,6 @@ Connections...
 
 
 <br/>
-
 C# script...
 
 ```
@@ -210,16 +206,17 @@ void loop(){
 
 <br />
 Demo...
-<br />
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step2-demo.gif" width="700"/>
 
 
 ## Step 3
 ### Transfering data Unity to Arduino over Bluetooth (HC05)
 In this step we tried to control an LED from Unity MRTK project. We have two ON/OFF buttons from Mixed Reality Toolbox (make sure to install mixed reality toolbox when adding mrtk to your project). First we need to pair HC-05 with the PC Bluetooth (Check step 2 for more details). 
+
 <br /><br />
 In "led.cs" we only used COM4 port which we knew HC05 is connected to. But in hololens we coud not find out the port name. So instead using "led_all_ports.cs" we checked all the ports and tried to send data to all of them, however it was unsuccessful. 
 <br /><br />
+
 Notes...
 - In Unity create a controller (and drag led.cs into it). Then after creting MRTK button (from mrtk toolkit) in 
 - <a href="https://www.youtube.com/watch?v=EIpxXodmO6A">This</a> video can help in creating MRTK Buttons.
@@ -363,7 +360,6 @@ public class led1 : MonoBehaviour
 ```
 
 <br />
-
 Arduino code...
 
 ```
@@ -394,6 +390,5 @@ void loop(){
 
 <br />
 Demo...
-<br />
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step3-demo.gif" width="700"/>
 
