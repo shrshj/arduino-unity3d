@@ -67,11 +67,10 @@ Demo...
 
 In this section we tried to transfer data from Arduino to unity. in arduino loop() we send "1" or "2" with one second intervals and in unity we change the ball color based on the vallue we receive.<br/>
 
-Note: First, pair HC-05 and you PC Bluetooth. Then in your PC Bluetooth setting find out the COM port that HC-05 is connected to. (the Outgoing port)<br/>
-
-Note: Make sure that in Player setting API Compatibility level is ".net" version 4 (It may be mentiond as .NET Framework) and not the standard version.<br/>
-
-Note: To Upload the compiled code to Arduino, first disconnect the HC-05 and after Uploading reconnect it.
+Notes: 
+- First, pair HC-05 and you PC Bluetooth. Then in your PC Bluetooth setting find out the COM port that HC-05 is connected to. (the Outgoing port)
+- Make sure that in Player setting API Compatibility level is ".net" version 4 (It may be mentiond as .NET Framework) and not the standard version.
+- To Upload the compiled code to Arduino, first disconnect the HC-05 and after Uploading reconnect it.
 
 <br/>
 Connections...
