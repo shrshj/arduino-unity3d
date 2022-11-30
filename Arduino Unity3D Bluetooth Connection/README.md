@@ -212,3 +212,176 @@ void loop(){
 Demo...
 <br />
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step2-demo.gif" width="700"/>
+
+
+## Step 3
+### Transfering data Unity to Arduino over Bluetooth (HC05)
+In this step we tried to control an LED from Unity MRTK project. We have two ON/OFF buttons from Mixed Reality Toolbox (make sure to install mixed reality toolbox when adding mrtk to your project). First we need to pair HC-05 with the PC Bluetooth (Check step 2 for more details). 
+
+In "led.cs" we only used COM4 port which we knew HC05 is connected to. But in hololens we coud not find out the port name. So instead using "led_all_ports.cs" we checked all the ports and tried to send data to all of them, however it was unsuccessful. 
+
+<br />
+C# script...
+
+ ```
+// led.cs
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System.IO.Ports;
+
+
+public class led : MonoBehaviour
+{
+    // Start is called before the first frame update
+
+    public SerialPort serial;
+    private bool lightstate;
+
+    void Start()
+    {
+        serial = new SerialPort("COM4", 9600);
+        lightstate = false;
+
+    }
+
+    // Update is called once per frame
+    public void on_led()
+    {
+        if(serial.IsOpen == false)
+        {
+            serial.Open();
+        }
+        serial.Write("A");
+        lightstate = true;
+    }
+
+    public void off_led()
+    {
+        if (serial.IsOpen == false)
+        {
+            serial.Open();
+        }
+        serial.Write("B");
+        lightstate = false;
+    }
+}
+
+
+ ```
+
+
+```
+// led_all_ports.cs
+
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System.IO.Ports;
+using System;
+
+public class led1 : MonoBehaviour
+{
+    // Start is called before the first frame update
+
+    public SerialPort[] serials;
+    private bool lightstate;
+
+    void Start()
+    {
+        lightstate = false;
+        string[] ports = SerialPort.GetPortNames();
+        serials = new SerialPort[ports.Length];
+
+        int i = 0;
+        foreach (string port in ports)
+        {
+            serials[i] = new SerialPort(port, 9600);
+            i++;
+        }
+
+
+    }
+
+    // Update is called once per frame
+    public void on_led1()
+    {
+        for (int i = 0; i < serials.Length; i++)
+        {
+            try
+            {
+                if (!serials[i].IsOpen)
+                {
+                    serials[i].Open();
+                }
+                serials[i].Write("A");
+                lightstate = true;
+                print("Successful");
+                print(serials[i].PortName);
+            }
+            catch (Exception e)
+            {
+                print("Unsuccessful");
+                print(serials[i].PortName);
+            }
+        }
+    }
+
+    public void off_led1()
+    {
+
+        for (int i = 0; i < serials.Length; i++)
+        {
+            try
+            {
+                if (!serials[i].IsOpen)
+                {
+                    serials[i].Open();
+                }
+                serials[i].Write("B");
+                lightstate = false;
+                print("Successful");
+                print(serials[i].PortName);
+            }
+            catch (Exception e)
+            {
+                print("Unsuccessful");
+                print(serials[i].PortName);
+
+            }
+        }
+    }
+}
+
+```
+
+<br />
+
+Arduino code...
+
+```
+// Control_Arduino_with_Unity.ino
+
+int data;
+#include <SoftwareSerial.h>;
+SoftwareSerial myConn(10,11); //rx,tx
+
+void setup(){
+    myConn.begin(9600);
+  pinMode(13,OUTPUT);
+}
+void loop(){
+  if(myConn.available()){
+    data = myConn.read();
+    if(data == 'A'){
+      digitalWrite(13,HIGH);
+    }
+    else {
+      digitalWrite(13,LOW);
+    }
+  }
+}
+
+```
