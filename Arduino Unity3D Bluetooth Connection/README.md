@@ -46,12 +46,12 @@ void loop()
 <br />
 App design...
 <br />
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/app.JPG" width="700"/>
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step1-app.JPG" width="700"/>
 
 <br />
 Connections...
 <br />
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/details.jpg" width="700"/>
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step1-details.jpg" width="700"/>
 
 
 
@@ -59,7 +59,7 @@ Connections...
 <br />
 Demo...
 <br />
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/bluetooth-hc05-demo.gif" width="700"/>
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step2-connections.jpg" width="700"/>
 
 
 ## Step 2
@@ -72,6 +72,13 @@ Note: First, pair HC-05 and you PC Bluetooth. Then in your PC Bluetooth setting 
 Note: Make sure that in Player setting API Compatibility level is ".net" version 4 (It may be mentiond as .NET Framework) and not the standard version.<br/>
 
 Note: To Upload the compiled code to Arduino, first disconnect the HC-05 and after Uploading reconnect it.
+
+<br/>
+Connections...
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step1-bluetooth-hc05-demo.gif" width="700"/>
+
+
+<br/>
 
 C# script...
 
