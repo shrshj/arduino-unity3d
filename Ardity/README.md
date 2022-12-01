@@ -88,8 +88,8 @@ In Unity, select "Ardity/Scenes/DemoScene_UserPoll_ReadWrite.unity" and then aft
 
 Note: Here, the most important script is "Ardity/Scripts/Samples/SampleUserPolling_ReadWrite.cs" that you can see in the below section. As you see, in the update() method we try to read a char from keyboard and send it over serial port.
 
-```
 
+```
 using UnityEngine;
 using System.Collections;
 
@@ -149,17 +149,16 @@ public class SampleUserPolling_ReadWrite : MonoBehaviour
     }
 }
 
-
 ```
 
 <br />
 Below is the arduino code for this section. After reading from the serial port, if the value is 'A' the LED will turn on and if it is 'Z' the LED  will turn off. Also, at the end of loop, we are sending back the LED state to Unity. 
 
 <br />
+
+
 ```
-
 // led-on-off.led-on-off.ino
-
 
 int ledPin = 13;
 bool ledState = false;
@@ -201,6 +200,7 @@ void loop(){
 
 
 <br />
+
 Demo...
 
-<img src="https://github.com/shshjmakerspace/AR-VR-Class/blob/main/2022%2011%2030%20-%20Ardity/Demo.gif" width="700"/><br />
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Ardity/Demo.gif" width="700"/>
