@@ -66,7 +66,7 @@ public class MyMessageListener : MonoBehaviour {
     void OnMessageArrived(string msg)
     {
         Debug.Log("Arrived: " + msg);
-        MyMSG = msg
+        MyMSG = msg;
     }
 
     // Invoked when a connect/disconnect event occurs. The parameter 'success'
