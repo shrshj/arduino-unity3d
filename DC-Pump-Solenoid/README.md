@@ -119,4 +119,4 @@ void loop(){
 3- Demo...
 
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/demo.gif" width="700"/>
-[![Demo CountPages alpha](https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/demo-thumbnail.jpg)](https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/demo.gif)
+[![Demo CountPages alpha](https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/demo-thumbnail.gif)](https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/demo.gif)
