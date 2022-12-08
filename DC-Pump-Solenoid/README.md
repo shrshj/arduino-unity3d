@@ -12,7 +12,7 @@ Finally using Ardity (tutorial can be found <a href="https://github.com/shshjmak
 2- Code...
 
 ```
-
+check_solenoid.ino
 int outpin = 13;
 
 void setup(){
@@ -51,6 +51,7 @@ Try to make a triangle shape connection between Solenoid, Pump and, power suply 
 2- Codes...
 
 ```
+//check_solenoid.ino
 int outpin = 13;
 
 void setup(){
@@ -77,4 +78,41 @@ void loop(){
 
 ## Controlling the pump from Unity
 
-1- Setup the Unity project as it is explained <a href = "https://github.com/shshjmakerspace/ArduinoUnity3D/tree/main/Ardity#led-on-off-using-keyboard-digital-inputoutput">HERE</a>. 
+1- Setup the Unity project as it is explained <a href = "https://github.com/shshjmakerspace/ArduinoUnity3D/tree/main/Ardity#led-on-off-using-keyboard-digital-inputoutput">HERE</a>.
+
+2- Codes...
+
+```
+control-pump.ino
+int pump = 13;
+bool pumpState = false;
+unsigned long last_feedback_time = 0;
+void setup(){
+  Serial.begin(9600);
+  pinMode(pump,OUTPUT);
+}
+
+void loop(){
+  if (Serial.available()){
+    char c = Serial.read();
+    if(c=='A'){
+      digitalWrite(pump, HIGH);
+      pumpState = true;
+    }
+    else if (c=='Z'){
+      digitalWrite(pump, LOW);
+      pumpState = false;
+    }
+  }
+
+  if(last_feedback_time + 2000 < millis()){
+    if(pumpState){
+      Serial.println("Pump is ON");
+    }
+    else{
+      Serial.println("Pump is OFF");
+    }
+  }
+}
+
+```
