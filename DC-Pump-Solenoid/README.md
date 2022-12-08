@@ -5,11 +5,11 @@ Finally using Ardity (tutorial can be found <a href="https://github.com/shshjmak
 
 ## 1 - check solenoid outputs
 
-Wiring...
+* Wiring...
 
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Ardity/Demo.gif" width="700"/>
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/arduino-solenoid.jpg" width="700"/>
 
-Code...
+* Code...
 
 ```
 
@@ -26,10 +26,10 @@ void loop(){
 
 ```
 
-After compiling and running the code the solenoid led must turn on.
+Note: After compiling and running the code the solenoid led must turn on.
 
 
-Checking Resistance and current of solenoid outputs...
+* Checking Resistance and current of solenoid outputs...
 
 
 <br />
