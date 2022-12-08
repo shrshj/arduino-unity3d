@@ -40,7 +40,7 @@ Using Voltmeter/Ohmmeter we can find aout which 2 pins of solenoid we can use as
 
 1- Wiring...
 
-Try to make a triangle shape connection between Solenoid, Pump and, power suply. I used a 9V power charger for power.
+Try to make a triangle shape connection between Solenoid, Pump and, power suply (based on my experience no difference if we swap pos). I used a 9V power charger for power. 
 
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/wiring.jpg" width="700"/>
 
@@ -73,3 +73,6 @@ void loop(){
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/dc-pump.gif" width="700"/>
 
 
+## Controlling the pump from Unity
+
+1- Setup the Unity project as it is explained <a href = "https://github.com/shshjmakerspace/ArduinoUnity3D/tree/main/Ardity#led-on-off-using-keyboard-digital-inputoutput">HERE</a>. 
