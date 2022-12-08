@@ -78,7 +78,7 @@ void loop(){
 
 ## Controlling the pump from Unity
 
-1- Setup the Unity project as it is explained <a href = "https://github.com/shshjmakerspace/ArduinoUnity3D/tree/main/Ardity#led-on-off-using-keyboard-digital-inputoutput">HERE</a>.
+1- Setup the Unity project as it is explained <a href = "https://github.com/shshjmakerspace/ArduinoUnity3D/tree/main/Ardity">HERE</a>.
 
 2- Codes...
 
@@ -116,3 +116,7 @@ void loop(){
 }
 
 ```
+3- Demo...
+
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/demo.gif" width="700"/>
+[![Watch the video](https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/demo-thumbnail.jpg)](https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/demo.gif)
