@@ -31,3 +31,6 @@ Note: After compiling and running the code the solenoid led must turn on.
 
 3- Checking Resistance and current of solenoid outputs...
 
+Using Voltmeter/Ohmmeter we can find aout which 2 pins of solenoid we can use as outputs (the one that have current when the solenoid is on). As the below gif shows (using Ohmmeter) if the resistance is zero it means there is current in the circuit and if the resistance value is '1' it means there is no current.
+
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/check-current.gif" width="700"/>
