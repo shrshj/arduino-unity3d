@@ -119,4 +119,5 @@ void loop(){
 3- Demo...
 
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/demo.gif" width="700"/>
-[![Demo CountPages alpha](https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/demo-thumbnail.gif)](https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/demo.gif)
+
+Note: feedback from arduino can be seen in Unity Console as well. Th code above is sending back feedback every 2 seconds.
