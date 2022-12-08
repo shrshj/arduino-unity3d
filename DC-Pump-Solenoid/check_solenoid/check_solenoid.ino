@@ -11,10 +11,10 @@ void setup(){
 
 void loop(){
     //digitalWrite(outpin,HIGH);
-    //delay(3000);
+    //delay(2000);
 
     //digitalWrite(outpin,LOW);
-    //delay(3000);
+    //delay(2000);
 
 
 }

@@ -7,7 +7,7 @@ Finally using Ardity (tutorial can be found <a href="https://github.com/shshjmak
 
 1- Wiring...
 
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/arduino-solenoid.jpg" width="700"/>
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/wiring-arduino-solenoid.jpg" width="700"/>
 
 2- Code...
 
@@ -34,3 +34,42 @@ Note: After compiling and running the code the solenoid led must turn on.
 Using Voltmeter/Ohmmeter we can find aout which 2 pins of solenoid we can use as outputs (the one that have current when the solenoid is on). As the below gif shows (using Ohmmeter) if the resistance is zero it means there is current in the circuit and if the resistance value is '1' it means there is no current.
 
 <img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/check-current.gif" width="700"/>
+
+
+## Turn a DC pump ON and OFF with 2 second intervals
+
+1- Wiring...
+
+Try to make a triangle shape connection between Solenoid, Pump and, power suply. I used a 9V power charger for power.
+
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/wiring.jpg" width="700"/>
+
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/my-wiring.jpg" width="700"/>
+
+
+
+2- Codes...
+
+```
+int outpin = 13;
+
+void setup(){
+  Serial.begin(9600);
+  pinMode(outpin,OUTPUT);
+  digitalWrite(outpin,HIGH);
+}
+
+void loop(){
+    digitalWrite(outpin,HIGH);
+    delay(2000);
+    digitalWrite(outpin,LOW);
+    delay(2000);
+}
+
+```
+
+3- Output...
+
+<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/DC-Pump-Solenoid/-media/dc-pump.gif" width="700"/>
+
+
