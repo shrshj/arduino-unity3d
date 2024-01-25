@@ -14,9 +14,6 @@ After following the setup guide (above link), compile and upload the provided Ar
 ### Arduino Code:
 
 <br />
-
-Arduino code...
-
 ```
 // arduino-to-unity/arduino-to-unity.ino
 
@@ -40,9 +37,6 @@ void loop(){
 <br />
 
 ### Unity Code:
-<br >
-Unity Ardity Message Listener...
-
 ```
 using System.Collections;
 using System.Collections.Generic;
@@ -79,15 +73,12 @@ public class MyMessageListener : MonoBehaviour {
 
 ```
 
-
 ## LED on-off Using keyboard (Digital input/output)
 In this section, demo scenes available in Ardity are used. The script "Ardity/Scripts/Samples/SampleUserPolling_ReadWrite.cs" is essential. It reads a char from the keyboard (A or Z) and sends it to Arduino. Based on the value, it changes the LED status (on or off). Simultaneously, Arduino sends the LED status to Unity every 2 seconds.<br />
 
 In Unity, select "Ardity/Scenes/DemoScene_UserPoll_ReadWrite.unity" and run the project. Press 'A' or 'Z'. In the Unity console, you will see a message saying "Sending A" or "Sending Z".<br />
 
-
 ### Unity Code:
-
 ```
 using UnityEngine;
 using System.Collections;
@@ -152,13 +143,8 @@ public class SampleUserPolling_ReadWrite : MonoBehaviour
 
 
 <br />
-Below is the arduino code for this section. After reading from the serial port, if the value is 'A' the LED will turn on and if it is 'Z' the LED  will turn off. Also, at the end of loop, we are sending back the LED state to Unity. 
-
-<br />
 
 ### Arduino Code:
-
-
 ```
 // led-on-off.led-on-off.ino
 
@@ -204,5 +190,4 @@ void loop(){
 <br />
 
 ### Demo
-
 <img src="media/demo.gif" width="700"/>
