@@ -37,7 +37,7 @@ void loop()
 }
 ```
 
-## App design
+## App Design
 <img src="media/step1-app.JPG" width="700"/>
 
 ## Connections
@@ -59,7 +59,7 @@ In this section, we attempted to transfer data from Arduino to Unity using Bluet
 ## Connections
 <img src="media/step2-connections.jpg" width="700"/>
 
-## C# script
+## C# Script
 
 ```
 using System.Collections;
@@ -199,7 +199,7 @@ In "led.cs," we used only COM4 port, which we knew HC05 is connected to. However
 - In Unity, create a controller (and drag led.cs into it). After creating an MRTK button (from Mixed Reality -> toolkit -> toolbox), go to the "Inspector window -> Interactable script -> Events section -> Onclick()" and select the controller. Then, choose the appropriate method (for example, on_led()).
 - [This](https://www.youtube.com/watch?v=EIpxXodmO6A) video can assist in creating MRTK Buttons.
 
-## C# script
+## C# Script
 
  ```
 // led.cs
@@ -335,7 +335,7 @@ public class led1 : MonoBehaviour
 
 ```
 
-## Arduino code
+## Arduino Code
 
 ```
 // Control_Arduino_with_Unity.ino
