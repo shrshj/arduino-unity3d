@@ -14,6 +14,7 @@ After following the setup guide (above link), compile and upload the provided Ar
 ### Arduino Code:
 
 <br />
+
 ```
 // arduino-to-unity/arduino-to-unity.ino
 
@@ -37,6 +38,7 @@ void loop(){
 <br />
 
 ### Unity Code:
+
 ```
 using System.Collections;
 using System.Collections.Generic;
@@ -79,6 +81,7 @@ In this section, demo scenes available in Ardity are used. The script "Ardity/Sc
 In Unity, select "Ardity/Scenes/DemoScene_UserPoll_ReadWrite.unity" and run the project. Press 'A' or 'Z'. In the Unity console, you will see a message saying "Sending A" or "Sending Z".<br />
 
 ### Unity Code:
+
 ```
 using UnityEngine;
 using System.Collections;
@@ -145,6 +148,7 @@ public class SampleUserPolling_ReadWrite : MonoBehaviour
 <br />
 
 ### Arduino Code:
+
 ```
 // led-on-off.led-on-off.ino
 
