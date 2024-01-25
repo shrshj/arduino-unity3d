@@ -1,20 +1,17 @@
 # Ardity
 
-
 ## Setup
 
-- It is better to install ardity from git (download and import it as a custom package from assets tab) and not from asset store.
-- On my PC it has some problems with COM ports but on another PC worked pretty well.
-- Main git repo is --- > <a href="https://ardity.dwilches.com/">HERE</a>
-- LED on/off Tutorial ---> <a href="https://www.youtube.com/watch?v=SD3iUnLNjY0">HERE</a>
-- Guide to setup a project (You need to follow it before reading the rest of this document) --- > <a href="https://github.com/dwilches/Ardity/blob/master/UnityProject/Ardity%20-%20Setup%20Guide.pdf">HERE</a>
-- Note: when you want to upload .ino code to Arduino, your unity project should not be running. 
+- It is recommended to install Ardity from Git (download and import it as a custom package from the Assets tab) rather than from the Asset Store.
+- While I faced some COM port issues on my PC, it worked smoothly on another PC.
+- Main Git repository can be found [here](https://ardity.dwilches.com/).
+- LED on/off Tutorial: [YouTube Link](https://www.youtube.com/watch?v=SD3iUnLNjY0)
+- Guide to setup a project: [Setup Guide](https://github.com/dwilches/Ardity/blob/master/UnityProject/Ardity%20-%20Setup%20Guide.pdf)
+- Note: When uploading .ino code to Arduino, ensure your Unity project is not running.
 
-<br />
+After following the setup guide (above link), compile and upload the provided Arduino code. In this code, Arduino sends an integer counter (or a string message) to Unity. On the Unity side, the Message Listener (OnMessageArrived() method) receives the message and stores it in a public variable for potential use.
 
-
-After Following the setup guide (above link) we will compile and upload below code to the Arduino. In this code arduino is sening an integer counter (we can send string message as well) to unity. On the other side, in unity Message Listener (OnMessageArrived() method) receives the message and we store it in a public variable to be able to use it if we want.
-
+### Arduino Code:
 
 <br />
 
@@ -42,6 +39,8 @@ void loop(){
 
 <br />
 
+### Unity Code:
+<br >
 Unity Ardity Message Listener...
 
 ```
@@ -82,12 +81,12 @@ public class MyMessageListener : MonoBehaviour {
 
 
 ## LED on-off Using keyboard (Digital input/output)
-In this section we use demo scenes available in Ardity. First we read a char from keyboard (A or Z) and send it to Arduino. Then based on the value, we change the LED status (on or off). At the same time Arduino is sending the led status to unity every 2 seconds. <br />
+In this section, demo scenes available in Ardity are used. The script "Ardity/Scripts/Samples/SampleUserPolling_ReadWrite.cs" is essential. It reads a char from the keyboard (A or Z) and sends it to Arduino. Based on the value, it changes the LED status (on or off). Simultaneously, Arduino sends the LED status to Unity every 2 seconds.<br />
 
-In Unity, select "Ardity/Scenes/DemoScene_UserPoll_ReadWrite.unity" and then after running the project Press 'A' or 'Z'. Now in unity console you will see a message that says "Sending A" or "Sending Z" <br />
+In Unity, select "Ardity/Scenes/DemoScene_UserPoll_ReadWrite.unity" and run the project. Press 'A' or 'Z'. In the Unity console, you will see a message saying "Sending A" or "Sending Z".<br />
 
-Note: Here, the most important script is "Ardity/Scripts/Samples/SampleUserPolling_ReadWrite.cs" that you can see in the below section. As you see, in the update() method we try to read a char from keyboard and send it over serial port.
 
+### Unity Code:
 
 ```
 using UnityEngine;
@@ -151,10 +150,13 @@ public class SampleUserPolling_ReadWrite : MonoBehaviour
 
 ```
 
+
 <br />
 Below is the arduino code for this section. After reading from the serial port, if the value is 'A' the LED will turn on and if it is 'Z' the LED  will turn off. Also, at the end of loop, we are sending back the LED state to Unity. 
 
 <br />
+
+### Arduino Code:
 
 
 ```
@@ -201,6 +203,6 @@ void loop(){
 
 <br />
 
-Demo...
+### Demo
 
 <img src="media/demo.gif" width="700"/>
