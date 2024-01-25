@@ -1,12 +1,13 @@
-## Importnat Notes
-- Tutorial <a href="https://www.programmingboss.com/2021/04/esp32-arduino-serial-communication-with-code.html">Link</a>
+## Setup Notes
+
+- Tutorial [Link](https://www.programmingboss.com/2021/04/esp32-arduino-serial-communication-with-code.html)
 - Boards: Arduino UNO R3, ESP-WROOM-32
-- Conncet TX and RX of boards in a cross way. Also conncet GND pins of them.
-Here, in ESP we defined Pin #16 as RX and Pin #17 as TX. In Arduino we used TX and RX defined on the board (Pin #1 and Pin #0).
-- We need to provide two ino files, one for ESP and one for Arduino.
-- Make sure that "serial baud rate" of both codes are same (here 9600). Using different baud rate can cause into reciving weired charachters in the Serial Monitor of Arduino IDE.
-- For ESP code we need to download the ESP32 board on the IDE. This <a href="https://randomnerdtutorials.com/installing-esp32-arduino-ide-2-0/">link</a> can help.
-- One problem that can happen is that Arduino IDE may not recognize ESP32 port. If it happened first check if the usb cable can transfer data or not (it must be able to transfer the data). If the cable has no problem then it can be beacuse of usb-to-uart bridge driver. Fist check the version required for the ESP board (must be written on a tiny black matterial on the board like <a href="https://startingelectronics.org/articles/ESP32-WROOM-testing/">here</a>) and download it. For me it was cp2102 version. If you are using windows 10 or 11 most probably the problem is because of the cable (It was also my problem).
+- Connect TX and RX of boards in a cross way. Also, connect GND pins of them. In ESP, we defined Pin #16 as RX and Pin #17 as TX. In Arduino, we used TX and RX defined on the board (Pin #1 and Pin #0).
+- Provide two .ino files, one for ESP and one for Arduino.
+- Ensure that the "serial baud rate" of both codes is the same (here 9600). Using different baud rates can result in receiving weird characters in the Serial Monitor of Arduino IDE.
+- For the ESP code, download the ESP32 board on the IDE. This [link](https://randomnerdtutorials.com/installing-esp32-arduino-ide-2-0/) can help.
+- One problem that may occur is that Arduino IDE may not recognize the ESP32 port. If it happens, first check if the USB cable can transfer data (it must be able to transfer data). If the cable has no problem, then it may be due to the USB-to-UART bridge driver. First, check the version required for the ESP board (must be written on a tiny black material on the board like [here](https://startingelectronics.org/articles/ESP32-WROOM-testing/)) and download it. For me, it was the cp2102 version. If you are using Windows 10 or 11, most probably the problem is because of the cable (It was also my problem).
+
 
 ## Connections
 <img src="media/conn.jpg" width="400"/>
