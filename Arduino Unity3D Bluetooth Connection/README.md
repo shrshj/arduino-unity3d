@@ -9,7 +9,7 @@ In these section we tried to send data to a Arduino from a mobile app over bluet
 Notes...
 - Link to the tutorial we used --- > <a href="https://www.youtube.com/watch?v=aQcJ4uHdQEA"> HERE</a>
 - To upload the complied code correctly to the Arduino, HC-05 must be disconnected from Arduino.
-- Download the app from <a href="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/step1_HC05-connection-to-phone-bluetooth/Bluetooth.apk">HERE</a>.
+- Download the app from <a href="step1_HC05-connection-to-phone-bluetooth/Bluetooth.apk">HERE</a>.
 
 <br /><br />
 Codes...
@@ -45,18 +45,18 @@ void loop()
 
 <br />
 App design...
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step1-app.JPG" width="700"/>
+<img src="media/step1-app.JPG" width="700"/>
 
 <br />
 Connections...
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step1-details.jpg" width="700"/>
+<img src="media/step1-details.jpg" width="700"/>
 
 
 
 
 <br />
 Demo...
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step1-demo.gif" width="700"/>
+<img src="media/step1-demo.gif" width="700"/>
 
 
 ## Step 2
@@ -72,7 +72,7 @@ Notes...
 
 <br /><br />
 Connections...
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step2-connections.jpg" width="700"/>
+<img src="media/step2-connections.jpg" width="700"/>
 
 
 <br />
@@ -206,7 +206,7 @@ void loop(){
 
 <br />
 Demo...
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step2-demo.gif" width="700"/>
+<img src="media/step2-demo.gif" width="700"/>
 
 
 ## Step 3
@@ -391,5 +391,5 @@ void loop(){
 
 <br />
 Demo...
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Arduino%20Unity3D%20Bluetooth%20Connection/-media/step3-demo.gif" width="700"/>
+<img src="media/step3-demo.gif" width="700"/>
 
