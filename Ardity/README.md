@@ -203,4 +203,4 @@ void loop(){
 
 Demo...
 
-<img src="https://github.com/shshjmakerspace/ArduinoUnity3D/blob/main/Ardity/Demo.gif" width="700"/>
+<img src="media/demo.gif" width="700"/>
