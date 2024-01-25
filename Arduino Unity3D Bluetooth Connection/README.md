@@ -3,14 +3,11 @@
 In this section, we attempted to send data to an Arduino from a mobile app over Bluetooth to check if the Bluetooth module works properly. We used the HC-05 Bluetooth module and Arduino UNO. Additionally, using [MIT App Inventor](http://ai2.appinventor.mit.edu/), we created a simple LED ON/OFF app to control an LED.
 
 ## Notes
-- Link to the tutorial we used: [HERE](https://www.youtube.com/watch?v=aQcJ4uHdQEA)
+- The tutorial we used can be found [HERE](https://www.youtube.com/watch?v=aQcJ4uHdQEA).
 - To upload the compiled code correctly to the Arduino, HC-05 must be disconnected from Arduino.
-- Download the app from [HERE](step1_HC05-connection-to-phone-bluetooth/Bluetooth.apk).
+- Download the app from [HERE](step1-HC05-connection-to-phone-bluetooth/Bluetooth.apk).
 
 ## Arduino Code
-
-<br /><br />
-Codes...
 
 ```
 char Incoming_value = 0;
@@ -40,44 +37,27 @@ void loop()
 }
 ```
 
-
-<br />
-
 ## App design
 <img src="media/step1-app.JPG" width="700"/>
-
-<br />
 
 ## Connections
 <img src="media/step1-details.jpg" width="700"/>
 
-
-
-
-<br />
-
 ## Demo
 <img src="media/step1-demo.gif" width="700"/>
 
-
 # Step 2
 
-In this section we tried to transfer data from Arduino to unity Bluetooth (HC05). in arduino loop() we send "1" or "2" with one second intervals and in unity we change the ball color based on the vallue we receive.
-
-<br />
+In this section, we attempted to transfer data from Arduino to Unity using Bluetooth (HC05). In the Arduino loop(), we transmitted '1' or '2' at one-second intervals. Subsequently, in Unity, we adjusted the ball color according to the received values.
 
 ## Notes
-- First, pair HC-05 and you PC Bluetooth. Then in your PC Bluetooth setting find out the COM port that HC-05 is connected to. (the Outgoing port)
-- Make sure that in Player setting API Compatibility level is ".net" version 4 (It may be mentiond as .NET Framework) and not the standard version.
-- To Upload the compiled code to Arduino, first disconnect the HC-05 and after Uploading reconnect it.
+- First, pair HC-05 with your PC's Bluetooth. Then, in your PC's Bluetooth settings, identify the COM port to which HC-05 is connected (the Outgoing port).
+- Ensure that in the Player settings, the API Compatibility level is set to ".NET" version 4 (It may be mentioned as .NET Framework) and not the standard version.
+- To upload the compiled code to Arduino, first disconnect the HC-05, and after uploading, reconnect it.
 
-<br /><br />
 
 ## Connections
 <img src="media/step2-connections.jpg" width="700"/>
-
-
-<br />
 
 ## C# script
 
@@ -185,8 +165,6 @@ public class SerialCOM : MonoBehaviour
 
 ```
 
-<br />
-
 ## Arduino Code
 
 ```
@@ -208,27 +186,18 @@ void loop(){
 } 
 ```
 
-<br />
-
 ## Demo
 <img src="media/step2-demo.gif" width="700"/>
 
-
 # Step 3
 
-In this step we tried to control an LED from Unity MRTK project. We have two ON/OFF buttons from Mixed Reality Toolbox (make sure to install mixed reality toolbox when adding mrtk to your project). First we need to pair HC-05 with the PC Bluetooth (Check step 2 for more details). 
+In this step, we attempted to control an LED from the Unity MRTK project. We incorporated two ON/OFF buttons from the Mixed Reality Toolbox (ensure you install the Mixed Reality Toolbox when adding MRTK to your project). Initially, we needed to pair HC-05 with the PC Bluetooth (refer to Step 2 for more details).
 
-<br />
-In "led.cs" we only used COM4 port which we knew HC05 is connected to. But in hololens we coud not find out the port name. So instead using "led_all_ports.cs" we checked all the ports and tried to send data to all of them, however it was unsuccessful. 
-<br />
+In "led.cs," we used only COM4 port, which we knew HC05 is connected to. However, in Hololens, we could not determine the port name. So, instead of using "led_all_ports.cs," we checked all the ports and attempted to send data to all of them, but it was unsuccessful.
 
 ## Notes
-- In Unity create a controller (and drag led.cs into it). Then after creting MRTK button (from Mixed Reality -> toolkit -> toolbox) in from " Inspector window - > Interactable script -> Events section -> Onclick() " select the controller and then select the right method (for example on_led() ).
-
-- <a href="https://www.youtube.com/watch?v=EIpxXodmO6A">This</a> video can help in creating MRTK Buttons.
-
-
-<br />
+- In Unity, create a controller (and drag led.cs into it). After creating an MRTK button (from Mixed Reality -> toolkit -> toolbox), go to the "Inspector window -> Interactable script -> Events section -> Onclick()" and select the controller. Then, choose the appropriate method (for example, on_led()).
+- [This](https://www.youtube.com/watch?v=EIpxXodmO6A) video can assist in creating MRTK Buttons.
 
 ## C# script
 
@@ -366,8 +335,6 @@ public class led1 : MonoBehaviour
 
 ```
 
-<br />
-
 ## Arduino code
 
 ```
@@ -394,9 +361,6 @@ void loop(){
 }
 
 ```
-
-
-<br />
 
 ## Demo
 <img src="media/step3-demo.gif" width="700"/>
