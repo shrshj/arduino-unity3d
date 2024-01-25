@@ -1,15 +1,13 @@
+# Step 1
 
+In this section, we attempted to send data to an Arduino from a mobile app over Bluetooth to check if the Bluetooth module works properly. We used the HC-05 Bluetooth module and Arduino UNO. Additionally, using [MIT App Inventor](http://ai2.appinventor.mit.edu/), we created a simple LED ON/OFF app to control an LED.
 
+## Notes
+- Link to the tutorial we used: [HERE](https://www.youtube.com/watch?v=aQcJ4uHdQEA)
+- To upload the compiled code correctly to the Arduino, HC-05 must be disconnected from Arduino.
+- Download the app from [HERE](step1_HC05-connection-to-phone-bluetooth/Bluetooth.apk).
 
-
-## Step 1
-In these section we tried to send data to a Arduino from a mobile app over bluetooth, to check if the bluetooth module works properly. We used HC-05 bluetooth module and Arduino UNO. Also, using <a href="http://ai2.appinventor.mit.edu/">MIT APP Inventor</a> we created a simple LED ON/OFF app to control an LED using it.
-
-<br />
-Notes...
-- Link to the tutorial we used --- > <a href="https://www.youtube.com/watch?v=aQcJ4uHdQEA"> HERE</a>
-- To upload the complied code correctly to the Arduino, HC-05 must be disconnected from Arduino.
-- Download the app from <a href="step1_HC05-connection-to-phone-bluetooth/Bluetooth.apk">HERE</a>.
+## Arduino Code
 
 <br /><br />
 Codes...
@@ -44,39 +42,44 @@ void loop()
 
 
 <br />
-App design...
+
+## App design
 <img src="media/step1-app.JPG" width="700"/>
 
 <br />
-Connections...
+
+## Connections
 <img src="media/step1-details.jpg" width="700"/>
 
 
 
 
 <br />
-Demo...
+
+## Demo
 <img src="media/step1-demo.gif" width="700"/>
 
 
-## Step 2
-### Transfering data from Arduino to Unity over Bluetooth (HC05)
+# Step 2
 
-In this section we tried to transfer data from Arduino to unity. in arduino loop() we send "1" or "2" with one second intervals and in unity we change the ball color based on the vallue we receive.
+In this section we tried to transfer data from Arduino to unity Bluetooth (HC05). in arduino loop() we send "1" or "2" with one second intervals and in unity we change the ball color based on the vallue we receive.
 
 <br />
-Notes...
+
+## Notes
 - First, pair HC-05 and you PC Bluetooth. Then in your PC Bluetooth setting find out the COM port that HC-05 is connected to. (the Outgoing port)
 - Make sure that in Player setting API Compatibility level is ".net" version 4 (It may be mentiond as .NET Framework) and not the standard version.
 - To Upload the compiled code to Arduino, first disconnect the HC-05 and after Uploading reconnect it.
 
 <br /><br />
-Connections...
+
+## Connections
 <img src="media/step2-connections.jpg" width="700"/>
 
 
 <br />
-C# script...
+
+## C# script
 
 ```
 using System.Collections;
@@ -183,7 +186,8 @@ public class SerialCOM : MonoBehaviour
 ```
 
 <br />
-Arduino Code...
+
+## Arduino Code
 
 ```
 #include <SoftwareSerial.h>;
@@ -205,26 +209,28 @@ void loop(){
 ```
 
 <br />
-Demo...
+
+## Demo
 <img src="media/step2-demo.gif" width="700"/>
 
 
-## Step 3
-### Transfering data Unity to Arduino over Bluetooth (HC05)
+# Step 3
+
 In this step we tried to control an LED from Unity MRTK project. We have two ON/OFF buttons from Mixed Reality Toolbox (make sure to install mixed reality toolbox when adding mrtk to your project). First we need to pair HC-05 with the PC Bluetooth (Check step 2 for more details). 
 
 <br />
 In "led.cs" we only used COM4 port which we knew HC05 is connected to. But in hololens we coud not find out the port name. So instead using "led_all_ports.cs" we checked all the ports and tried to send data to all of them, however it was unsuccessful. 
 <br />
 
-Notes...
+## Notes
 - In Unity create a controller (and drag led.cs into it). Then after creting MRTK button (from Mixed Reality -> toolkit -> toolbox) in from " Inspector window - > Interactable script -> Events section -> Onclick() " select the controller and then select the right method (for example on_led() ).
 
 - <a href="https://www.youtube.com/watch?v=EIpxXodmO6A">This</a> video can help in creating MRTK Buttons.
 
 
 <br />
-C# script...
+
+## C# script
 
  ```
 // led.cs
@@ -272,7 +278,7 @@ public class led : MonoBehaviour
 }
 
 
- ```
+```
 
 
 ```
@@ -361,7 +367,8 @@ public class led1 : MonoBehaviour
 ```
 
 <br />
-Arduino code...
+
+## Arduino code
 
 ```
 // Control_Arduino_with_Unity.ino
@@ -390,6 +397,7 @@ void loop(){
 
 
 <br />
-Demo...
+
+## Demo
 <img src="media/step3-demo.gif" width="700"/>
 
